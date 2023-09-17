@@ -15,7 +15,7 @@
 // => Medium
 // Exercise 7: Count Digits in a Number (Like $numbers = 12345)
 // Exercise 8: Multiplication Table of 1 to 10;
-// Exercise 9: Reverse a Given String ($string = "I love PHP");
+// Exercise 9: Reverse a Given String ($string = "I love PHP"); [For Module 2, You can skip this problem]
 
 // => Hard
 // Exercise 10: Fibonacci Sequence of First 10 Numbers.
