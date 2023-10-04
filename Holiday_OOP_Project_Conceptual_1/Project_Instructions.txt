@@ -1,0 +1,58 @@
+Follow the provided code and instructions below to complete the Project:
+
+Part 1: Abstract Task Class
+Review the existing abstract class Task. It includes properties such as $title, $description, and $completed, as well as abstract methods getPriority() and markAsCompleted(). These properties and methods serve as the foundation for your task management system.
+
+
+Part 2: Interfaces for Start Dates and Due Dates
+Define two new interfaces to represent tasks that can have start dates and due dates:
+HasStartDateInterface: This interface should declare one method, getStartDate(), to retrieve the start date of a task.
+
+HasDueDateInterface: This interface should declare one method, getDueDate(), to retrieve the due date of a task.
+
+
+Part 3: Traits for Tags and Assignees
+Create two traits to handle tags and assignees for tasks:
+
+HasTagsTrait: This trait will allow tasks to have tags associated with them. It includes properties and methods to add and retrieve tags.
+
+HasAssigneeTrait: This trait will allow tasks to have assignees. It includes properties and methods to add and retrieve assignees.
+
+
+Part 4: Concrete DeadlineTask Class
+Implement a concrete class DeadlineTask that extends the Task class. This class should implement both HasStartDateInterface and HasDueDateInterface. It should also use the HasAssigneeTrait to manage assignees. The class should have the following properties:
+
+$startDate (string): Represents the start date of the task.
+$dueDate (string): Represents the due date of the task.
+Implement the following methods:
+
+__construct($title, $description, $startDate, $dueDate): A constructor method that initializes the title, description, startDate, and dueDate properties.
+
+getStartDate(): Implement the getStartDate method from the HasStartDateInterface to return the start date of the task.
+
+getDueDate(): Implement the getDueDate method from the HasDueDateInterface to return the due date of the task.
+
+getPriority(): Implement a priority calculation logic (for example, return "Low" for now).
+
+markAsCompleted(): Implement the markAsCompleted method to mark the task as completed (set $completed to true).
+
+
+Part 5: Concrete TaggedDeadlineTask Class
+Create a concrete class TaggedDeadlineTask that extends the DeadlineTask class and uses both the HasTagsTrait and HasAssigneeTrait. This class inherits properties and methods from DeadlineTask, HasTagsTrait, and HasAssigneeTrait.
+
+
+Part 6: Usage and Demonstration
+In the main part of the code, create instances of TaggedDeadlineTask and DeadlineTask. Add tags and assignees to a TaggedDeadlineTask instance and demonstrate the usage of the task management system by displaying task information.
+
+Use a foreach loop to iterate through an array of tasks and display the following information for each task:
+
+Title
+Description
+Start Date
+Due Date
+Tags (if the task is an instance of TaggedDeadlineTask)
+Assignees
+Priority
+Completed (display "Yes" or "No" based on the completion status)
+After marking a TaggedDeadlineTask as completed, display the updated completion status.
+
