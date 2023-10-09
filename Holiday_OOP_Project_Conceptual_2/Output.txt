@@ -1,0 +1,18 @@
+Standard Apartment Details:
+Apartment Number: 501
+Area (sq. ft.): 1800
+Number of Bedrooms: 2
+Monthly Rent: $610
+
+Luxury Apartment Details:
+Apartment Number: 502
+Area (sq. ft.): 3000
+Number of Bedrooms: 3
+Monthly Rent: $1950
+Amenities: Swimming Pool, Gym, Parking
+
+Owner Details:
+Owner Name: Salman Khan
+Apartment Number: 501
+Owner Name: Shah Rukh Khan
+Apartment Number: 502

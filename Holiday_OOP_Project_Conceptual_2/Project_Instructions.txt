@@ -1,0 +1,68 @@
+Follow the provided code and instructions below to complete the Project:
+
+Step 1: Abstract Class Apartment
+
+This is an abstract class representing apartments.
+It has properties like $apartmentNumber, $area, $numberOfBedrooms, and $rent.
+The constructor initializes these properties and calls the calculateRent method.
+calculateRent is an abstract method that must be implemented in subclasses.
+displayApartmentDetails method displays apartment details.
+getApartmentNumber method returns the apartment number.
+
+
+Step 2: Interface HasAmenities
+
+This interface defines a method getAmenities.
+Classes implementing this interface will provide their list of amenities.
+
+
+Step 3: Trait HasBalcony
+
+This trait is used for apartments with balconies.
+It has properties and methods related to balconies.
+
+
+Step 4: Class StandardApartment (Inherits from Apartment)
+
+This class represents a standard apartment.
+It uses the HasBalcony trait.
+calculateRent method calculates rent based on the area and number of bedrooms.
+It adds $50 to the rent if the apartment has a balcony.
+
+
+Step 5: Class LuxuryApartment (Inherits from Apartment and Implements HasAmenities)
+
+This class represents a luxury apartment.
+It has an additional property $amenities.
+The constructor sets the amenities and calls the parent constructor.
+calculateRent method calculates rent differently for luxury apartments.
+getAmenities returns a list of amenities.
+
+
+Step 6: Class Owner
+
+This class represents an apartment owner.
+It has properties for name and the associated apartment.
+The constructor initializes these properties.
+
+
+Step 7: Instantiate Apartment Objects
+
+Create instances of StandardApartment and LuxuryApartment.
+Set the balcony for the standard apartment.
+Calculate rent for the standard apartment.
+
+
+Step 8: Instantiate Owner Objects
+
+Create instances of Owner (represents apartment owners).
+Associate each owner with an apartment.
+
+
+Step 9: Display Apartment and Owner Details
+
+Display details for the standard and luxury apartments.
+Display owner details.
+
+
+
