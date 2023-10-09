@@ -20,9 +20,4 @@ class StandardApartment extends Apartment
 
     }
 
-    // public function getAmenities()
-    // {
-    //     return "None";
-    // }
-
 }

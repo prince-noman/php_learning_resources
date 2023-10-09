@@ -21,7 +21,7 @@ $owner2 = new Owner( "Shah Rukh Khan", $luxuryApartment );
 // Display apartment details
 echo "Standard Apartment Details:\n";
 $standardApartment->displayApartmentDetails();
-// echo "Amenities: " . $standardApartment->getAmenities() . "\n";
+
 
 echo "\nLuxury Apartment Details:\n";
 $luxuryApartment->displayApartmentDetails();
