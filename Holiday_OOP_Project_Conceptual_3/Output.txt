@@ -1,0 +1,35 @@
+Blood received from Donor: Alice
+Blood received from Donor: Bob
+Blood received from Donor: Charlie
+List of Donors:
+Name: Alice
+Blood Group: A+
+Age: 25 years
+Blood Test for Donor: Alice
+Blood Group: A+
+Result: Blood Group is compatible
+
+Name: Bob
+Blood Group: B-
+Age: 30 years
+Blood Test for Donor: Bob
+Blood Group: B-
+Result: Blood Group is compatible
+
+Name: Charlie
+Blood Group: O+
+Age: 35 years
+Blood Test for Donor: Charlie
+Blood Group: O+
+Result: Blood Group is compatible
+
+
+Donors with Blood Group A+:
+Name: Alice
+Blood Group: A+
+Age: 25 years
+
+Polymorphism Example:
+Alice donated blood.
+Bob donated blood.
+Charlie donated blood professionally.
