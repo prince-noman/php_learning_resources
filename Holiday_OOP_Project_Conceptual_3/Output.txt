@@ -1,6 +1,8 @@
 Blood received from Donor: Alice
 Blood received from Donor: Bob
 Blood received from Donor: Charlie
+
+
 List of Donors:
 Name: Alice
 Blood Group: A+
@@ -28,6 +30,7 @@ Donors with Blood Group A+:
 Name: Alice
 Blood Group: A+
 Age: 25 years
+
 
 Polymorphism Example:
 Alice donated blood.
