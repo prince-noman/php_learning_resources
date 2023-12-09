@@ -1,0 +1,12 @@
+============
+Requirements
+============
+
+1. **Users table:** This table will store information about the registered users of the system, such as their name, email, password, date of birth, and profile image.
+2. **Artists table:** This table will store information about the artists, such as their names, genre, and image.
+3. **Albums table:** This table will store information about the albums, such as the album name, release date, and image. It will also have a foreign key linking to the Artists table.
+4. **Tracks table:** This table will store information about the tracks, such as the track name, duration, and file path. It will also have a foreign key linking to the album table.
+5. **Playlists table:** This table will store information about the playlists created by the users, such as the playlist name and image. It will also have a foreign key linking to the Users table.
+6. **Playlist_Tracks table:** This table will store the association between playlists and tracks. It will have two foreign keys, linking to the Playlists and Tracks tables.
+7. **Followers table:** This table will store the association between users and artists. It will have two foreign keys, linking to the Users and Artists tables.
+8. **Likes table:** This table will store information about the tracks liked by the users, such as the date and time of the like. It will have two foreign keys, linking to the Users and Tracks tables.

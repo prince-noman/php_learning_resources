@@ -1,0 +1,1 @@
+Laravel Migrations and Relationships (Music App Database Schema Design)
