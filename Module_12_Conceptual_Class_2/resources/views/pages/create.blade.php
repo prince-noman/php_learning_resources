@@ -41,10 +41,10 @@
                 <label for="category" class="block text-sm font-medium">Category</label>
                 <select id="category" name="category"
                     class="mt-1 p-2 w-full bg-gray-800 text-white rounded-md shadow-sm focus:outline-none focus:border-blue-300">
-                    <option value="{{ old('technology', 'technology') }}">Technology</option>
-                    <option value="{{ old('lifestyle', 'lifestyle') }}">Lifestyle</option>
-                    <option value="{{ old('travel', 'travel') }}">Travel</option>
-                    <option value="{{ old('fashion', 'fashion') }}">Fashion</option>
+                    <option value="technology" {{ old('category') == 'technology' ? 'selected' : '' }}>Technology</option>
+                    <option value="lifestyle" {{ old('category') == 'lifestyle' ? 'selected' : '' }}>Lifestyle</option>
+                    <option value="travel" {{ old('category') == 'travel' ? 'selected' : '' }}>Travel</option>
+                    <option value="fashion" {{ old('category') == 'fashion' ? 'selected' : '' }}>Fashion</option>
                 </select>
                 @error('category')
                 <p class="text-red-500">{{ $message }}</p>
@@ -56,19 +56,18 @@
                 <label class="block text-sm font-medium">Tags</label>
                 <div class="flex flex-wrap">
                     <label class="inline-flex items-center mr-4">
-                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="{{ old('PHP', 'PHP') }}">
+                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="PHP" {{ in_array('PHP', old('tags', [])) ? 'checked' : '' }}>
                         <span class="ml-2">PHP</span>
                     </label>
                     
                     <label class="inline-flex items-center mr-4">
-                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="{{ old('JS','JS') }}">
+                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="JS" {{in_array('JS', old('tags', [])) ? 'checked' : '' }}>
                         <span class="ml-2">JS</span>
                     </label>
                     <label class="inline-flex items-center mr-4">
-                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="{{ old('Python', 'Python') }}">
+                        <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="Python" {{ in_array('Python', old('tags', [])) ? 'checked' : '' }}>
                         <span class="ml-2">Python</span>
                     </label>
-                    <!-- Add more tags as needed -->
                 </div>
                 @error('tags')
                 <p class="text-red-500">{{ $message }}</p>
@@ -80,11 +79,11 @@
                 <label class="block text-sm font-medium">Status</label>
                 <div class="flex">
                     <label class="inline-flex items-center">
-                        <input type="radio" class="form-radio text-blue-500" name="status" value="{{ old('published', 'published') }}">
+                        <input type="radio" class="form-radio text-blue-500" name="status" value="published" {{ old('status') == 'published' ? 'checked' : '' }}>
                         <span class="ml-2">Published</span>
                     </label>
                     <label class="ml-4 inline-flex items-center">
-                        <input type="radio" class="form-radio text-blue-500" name="status" value="{{ old('draft', 'draft') }}">
+                        <input type="radio" class="form-radio text-blue-500" name="status" value="draft" {{ old('status') == 'draft' ? 'checked' : '' }}>
                         <span class="ml-2">Draft</span>
                     </label>
                 </div>

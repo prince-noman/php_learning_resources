@@ -65,7 +65,6 @@
                         <input type="checkbox" class="form-checkbox text-blue-500" name="tags[]" value="Python" {{ in_array('Python', $post->tags) ? 'checked' : '' }}>
                         <span class="ml-2">Python</span>
                     </label>
-                    <!-- Add more tags as needed -->
                 </div>
                 @error('tags')
                     <p class="text-red-500">{{ $message }}</p>
