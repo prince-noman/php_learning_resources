@@ -87,6 +87,7 @@
                         <span class="ml-2">Draft</span>
                     </label>
                 </div>
+                
                 @error('status')
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
