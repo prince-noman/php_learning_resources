@@ -95,7 +95,7 @@
 
             <!-- Featured Image Field -->
             <div class="mb-4">
-                <img id="featuredImageDisplay" alt="Featured Image" class="w-64">
+                <img id="featuredImageDisplay" alt="Featured Image" class="w-64 hidden">
                 <label for="featuredImage" class="block text-sm font-medium">Featured Image</label>
                 <input type="file" id="featuredImage" name="featured_image"
                     class="mt-1 p-2 w-full bg-gray-800 text-white rounded-md shadow-sm focus:outline-none focus:border-blue-300">
