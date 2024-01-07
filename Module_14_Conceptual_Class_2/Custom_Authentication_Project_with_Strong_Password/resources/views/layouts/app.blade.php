@@ -14,9 +14,11 @@
             <li>
                 <a href="{{ route('home') }}" class="p-3">Home</a>
             </li>
+            @auth
             <li>
                 <a href="{{ route('dashboard') }}" class="p-3">Dashboard</a>
             </li>
+            @endauth
         </ul>
 
         <ul class="flex items-center">
