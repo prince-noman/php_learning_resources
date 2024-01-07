@@ -17,7 +17,11 @@ class RegisterController extends Controller
     }
 
     public function store(Request $request){
-        $validators = Validator::make($request, [
+        /*
+        
+        //API Based Validation
+
+        $validators = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => [
@@ -31,8 +35,16 @@ class RegisterController extends Controller
                 'message' => $validators->errors()
             ],200);
         }
+        */
 
-
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'password' => [
+                'required', 'confirmed',
+                Password::min(2)->letters()->numbers()->symbols()->mixedCase()
+                ]
+            ]);
 
         User::create([
             'name' => $request->name,
